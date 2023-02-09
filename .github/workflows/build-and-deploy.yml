@@ -2,7 +2,7 @@ name: Build and Deploy to Azure Evn
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
-    branches: {'master'}
+    branches: ['master']
   workflow_dispatch:
 
 jobs:
