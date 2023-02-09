@@ -24,8 +24,8 @@ jobs:
           password: 'd4rV2fBi/HrvBWls86eTsRnmEXYz1iOeD2q+cU0kPf+ACRB7iDej'
           # Container registry server url
           login-server: 'johndemo.azurecr.io'
-      -
-        name: Build and push
+
+      - name: Build and push
         uses: docker/build-push-action@v4
         with:
           push: true
@@ -36,4 +36,3 @@ deployToAKS:
   runs-on: ubuntu-latest
   steps:
     - run: echo "hello"
-
